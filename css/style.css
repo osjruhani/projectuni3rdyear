@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+   line-height: 1.8;
+   color: #898fa1;
+   font-size: 15px;
+   font-family: 'Lato', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #11245A;
+}
+
+.title-sm {
+   font-size: 16px;
+   letter-spacing: 1px;
+}
+
+a {
+   font-weight: 700;
+   transition: all 0.4s ease;
+   text-decoration: none;
+}
+
+img {
+   width: 100%;
+}
+
+small {
+   font-size: 12px;
+   letter-spacing: 2px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+section {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.navbar {
+	background: #021C1E !important;
+	height: 80px;
+}
+
+.navbar .navbar-nav .nav-link {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+#home {
+   background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg);
+   min-height: 92vh;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+}
+
+#home h1 {
+   font-weight: 700;
+   margin-bottom: 40px;
+}
+
+#home p {
+   max-width: 550px;
+   margin: 18px auto;
+   margin-bottom: 25px;
+}
+
+.btn {
+   font-weight: 700;
+   font-size: 12px;
+   text-transform: uppercase;
+   padding: 12px 28px;
+   border-radius: 0;
+}
+
+.btn-brand {
+   background-color: #2C7873;
+   color: #fff;
+}
+
+.btn-brand:hover {
+   background-color: #ffffff;
+   color: #000000;
+   border: 1px soild #ffffff;
+}
+
+
+
+.section-intro {
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.section-intro .hline {
+   width: 120px;
+   height: 2px;
+   background-color: rgba(0, 0, 0, 0.1);
+   margin: 16px auto 0 auto;
+}
+
+.icon-box {
+   width: 60px;
+   height: 60px;
+   background-color: #004445;
+   color: #fff;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 32px;
+   flex: none;
+}
+
+
+/* gallary start */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+
+#about-us p{
+   text-align: center;
+}
+
+
+.footer-bottom {
+   padding-top: 30px;
+   padding-bottom: 30px;
+   border-top: 1px solid rgba(0, 0, 0, 0.1);
+   background: #021c1e;
+}
+
+/*admin page table*/
+.table-admin {
+border-collapse: collapse;
+width: 100%;
+color: #588c7e;
+font-size: 25px;
+text-align: left;
+}
+admin-table th {
+background-color: #588c7e;
+color: white;
+}
+.admin-table tr:nth-child(even) {background-color: #f2f2f2}
